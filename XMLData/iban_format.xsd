@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="org.as.iban" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xs:element name="countries">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="country" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+							<xs:element name="regexp" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+							<xs:element name="bankIdentLength" minOccurs="1" maxOccurs="1"></xs:element>
+							<xs:element name="ktoIdentLength" minOccurs="1" maxOccurs="1"></xs:element>
+						</xs:sequence>
+						<xs:attribute name="countryCode" type="xs:ID" use="required"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="schemaLocation" type="xs:string"></xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

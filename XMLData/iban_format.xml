@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<countries xmlns="org.as.iban" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<country countryCode="AT">
+		<name>Austria</name>
+		<regexp>AT\d{2}\d{5}\d{11}</regexp>
+		<bankIdentLength>5</bankIdentLength>
+		<ktoIdentLength>11</ktoIdentLength>
+	</country>
+	<country countryCode="BE">
+		<name>Belgium</name>
+		<regexp>BE\d{2}\d{3}\d{7}\d{2}</regexp>
+		<bankIdentLength>3</bankIdentLength>
+		<ktoIdentLength>9</ktoIdentLength>
+	</country>
+	<country countryCode="BG">
+		<name>Bulgaria</name>
+		<regexp>BG\d{2}[A-Z]{4}\d{4}\d{2}[a-zA-Z0-9]{8}</regexp>
+		<bankIdentLength>8</bankIdentLength>
+		<ktoIdentLength>10</ktoIdentLength>
+	</country>
+	<country countryCode="HR">
+		<name>Croatia</name>
+		<regexp>HR\d{2}\d{7}\d{10}</regexp>
+		<bankIdentLength>7</bankIdentLength>
+		<ktoIdentLength>10</ktoIdentLength>
+	</country>
+	<country countryCode="CY">
+		<name>Cyprus</name>
+		<regexp>CY\d{2}\d{3}\d{5}[a-zA-Z0-9]{16}</regexp>
+		<bankIdentLength>8</bankIdentLength>
+		<ktoIdentLength>16</ktoIdentLength>
+	</country>
+	<country countryCode="CZ">
+		<name>Czech Republic</name>
+		<regexp>CZ\d{2}\d{4}\d{6}\d{10}</regexp>
+		<bankIdentLength>4</bankIdentLength>
+		<ktoIdentLength>16</ktoIdentLength>
+	</country>
+	<country countryCode="DK">
+		<name>Denmark</name>
+		<regexp>DK\d{2}\d{4}\d{9}\d{1}</regexp>
+		<bankIdentLength>4</bankIdentLength>
+		<ktoIdentLength>10</ktoIdentLength>
+	</country>
+	<country countryCode="EE">
+		<name>Estonia</name>
+		<regexp>EE\d{2}[1-9]\d{1}\d{2}\d{11}\d{1}</regexp>
+		<bankIdentLength>2</bankIdentLength>
+		<ktoIdentLength>14</ktoIdentLength>
+	</country>
+	<country countryCode="FI">
+		<name>Finland</name>
+		<regexp>FI\d{2}\d{6}\d{7}\d{1}</regexp>
+		<bankIdentLength>3</bankIdentLength>
+		<ktoIdentLength>11</ktoIdentLength>
+	</country>
+	<country countryCode="FR">
+		<name>France</name>
+		<regexp>FR\d{2}\d{5}\d{5}[a-zA-Z0-9]{11}\d{2}</regexp>
+		<bankIdentLength>5</bankIdentLength>
+		<ktoIdentLength>18</ktoIdentLength>
+	</country>
+	<country countryCode="DE">
+		<name>Germany</name>
+		<regexp>DE\d{2}\d{8}\d{10}</regexp>
+		<bankIdentLength>8</bankIdentLength>
+		<ktoIdentLength>10</ktoIdentLength>
+	</country>
+	<country countryCode="GR">
+		<name>Greece</name>
+		<regexp>GR\d{2}\d{3}\d{4}[a-zA-Z0-9]{16}</regexp>
+		<bankIdentLength>7</bankIdentLength>
+		<ktoIdentLength>16</ktoIdentLength>
+	</country>
+	<country countryCode="HU">
+		<name>Hungary</name>
+		<regexp>HU\d{2}\d{3}\d{4}\d{1}\d{15}\d{1}</regexp>
+		<bankIdentLength>7</bankIdentLength>
+		<ktoIdentLength>17</ktoIdentLength>
+	</country>
+	<country countryCode="IS">
+		<name>Iceland</name>
+		<regexp>IS\d{2}\d{4}\d{2}\d{6}\d{10}</regexp>
+		<bankIdentLength>4</bankIdentLength>
+		<ktoIdentLength>18</ktoIdentLength>
+	</country>
+	<country countryCode="IE">
+		<name>Ireland</name>
+		<regexp>IE\d{2}[A-Z]{4}\d{6}\d{8}</regexp>
+		<bankIdentLength>10</bankIdentLength>
+		<ktoIdentLength>8</ktoIdentLength>
+	</country>
+	<country countryCode="IT">
+		<name>Italia</name>
+		<regexp>IT\d{2}[A-Z]\d{5}\d{5}[a-zA-Z0-9]{12}</regexp>
+		<bankIdentLength>11</bankIdentLength>
+		<ktoIdentLength>12</ktoIdentLength>
+	</country>
+	<country countryCode="LV">
+		<name>Latvia</name>
+		<regexp>LV\d{2}[A-Z]{4}[a-zA-Z0-9]{13}</regexp>
+		<bankIdentLength>4</bankIdentLength>
+		<ktoIdentLength>13</ktoIdentLength>
+	</country>
+	<country countryCode="LI">
+		<name>Lichtenstein</name>
+		<regexp>LI\d{2}\d{5}[a-zA-Z0-9]{12}</regexp>
+		<bankIdentLength>5</bankIdentLength>
+		<ktoIdentLength>12</ktoIdentLength>
+	</country>
+	<country countryCode="LT">
+		<name>Lithuania</name>
+		<regexp>LT\d{2}\d{5}\d{11}</regexp>
+		<bankIdentLength>5</bankIdentLength>
+		<ktoIdentLength>11</ktoIdentLength>
+	</country>
+	<country countryCode="LU">
+		<name>Luxembourg</name>
+		<regexp>LU\d{2}\d{3}[a-zA-Z0-9]{13}</regexp>
+		<bankIdentLength>3</bankIdentLength>
+		<ktoIdentLength>13</ktoIdentLength>
+	</country>
+	<country countryCode="MT">
+		<name>Malta</name>
+		<regexp>MT\d{2}[A-Z]{4}\d{5}[a-zA-Z0-9]{18}</regexp>
+		<bankIdentLength>9</bankIdentLength>
+		<ktoIdentLength>18</ktoIdentLength>
+	</country>
+	<country countryCode="MC">
+		<name>Monaco</name>
+		<regexp>MC\d{2}\d{5}\d{5}[a-zA-Z0-9]{11}\d{2}</regexp>
+		<bankIdentLength>10</bankIdentLength>
+		<ktoIdentLength>13</ktoIdentLength>
+	</country>
+	<country countryCode="NL">
+		<name>Netherlands</name>
+		<regexp>NL\d{2}[A-Z]{4}\d{10}</regexp>
+		<bankIdentLength>4</bankIdentLength>
+		<ktoIdentLength>10</ktoIdentLength>
+	</country>
+	<country countryCode="NO">
+		<name>Norway</name>
+		<regexp>NO\d{2}\d{4}\d{6}\d{1}</regexp>
+		<bankIdentLength>4</bankIdentLength>
+		<ktoIdentLength>7</ktoIdentLength>
+	</country>
+	<country countryCode="PL">
+		<name>Poland</name>
+		<regexp>PL\d{2}\d{8}\d{16}</regexp>
+		<bankIdentLength>8</bankIdentLength>
+		<ktoIdentLength>16</ktoIdentLength>
+	</country>
+	<country countryCode="PT">
+		<name>Portugal</name>
+		<regexp>PT\d{2}\d{4}\d{4}\d{11}\d{2}</regexp>
+		<bankIdentLength>8</bankIdentLength>
+		<ktoIdentLength>13</ktoIdentLength>
+	</country>
+	<country countryCode="RO">
+		<name>Romania</name>
+		<regexp>RO\d{2}[A-Z]{4}[a-zA-Z0-9]{16}</regexp>
+		<bankIdentLength>4</bankIdentLength>
+		<ktoIdentLength>16</ktoIdentLength>
+	</country>
+	<country countryCode="SK">
+		<name>Slovakia</name>
+		<regexp>SK\d{2}\d{4}\d{6}\d{10}</regexp>
+		<bankIdentLength>4</bankIdentLength>
+		<ktoIdentLength>16</ktoIdentLength>
+	</country>
+	<country countryCode="SI">
+		<name>Slovenia</name>
+		<regexp>SI\d{2}\d{5}\d{8}\d{2}</regexp>
+		<bankIdentLength>5</bankIdentLength>
+		<ktoIdentLength>10</ktoIdentLength>
+	</country>
+	<country countryCode="ES">
+		<name>Spain</name>
+		<regexp>ES\d{2}\d{4}\d{4}\d{1}\d{1}\d{10}</regexp>
+		<bankIdentLength>8</bankIdentLength>
+		<ktoIdentLength>12</ktoIdentLength>
+	</country>
+	<country countryCode="SE">
+		<name>Sweden</name>
+		<regexp>SE\d{2}\d{3}\d{16}\d{1}</regexp>
+		<bankIdentLength>3</bankIdentLength>
+		<ktoIdentLength>17</ktoIdentLength>
+	</country>
+	<country countryCode="CH">
+		<name>Switzerland</name>
+		<regexp>CH\d{2}\d{5}[a-zA-Z0-9]{12}</regexp>
+		<bankIdentLength>5</bankIdentLength>
+		<ktoIdentLength>12</ktoIdentLength>
+	</country>
+	<country countryCode="GB">
+		<name>United Kingdom</name>
+		<regexp>GB\d{2}[A-Z]{4}\d{6}\d{8}</regexp>
+		<bankIdentLength>10</bankIdentLength>
+		<ktoIdentLength>8</ktoIdentLength>
+	</country>
+</countries>	
