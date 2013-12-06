@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="org.as.iban" xmlns:tns="org.as.iban" elementFormDefault="qualified">
+
+	<xs:element name="rules" type="tns:rules_type"></xs:element>
+	
+	<xs:complexType name="rules_type">
+		<xs:sequence>
+			<xs:element name="rule" type="tns:rule_type" minOccurs="1" maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+    	<xs:attribute name="schemaLocation" type="xs:string"></xs:attribute>
+	</xs:complexType>
+	
+	<xs:complexType name="rule_type">
+		<xs:sequence>
+			<xs:element name="no_calculation" type="tns:no_calculation_type" minOccurs="0" maxOccurs="unbounded"></xs:element>
+			<xs:element name="mappings_kto" type="tns:mappings_kto_type" minOccurs="0" maxOccurs="unbounded"></xs:element>
+			<xs:element name="mappings_ktokr" type="tns:mappings_ktokr_type" minOccurs="0" maxOccurs="unbounded"></xs:element>
+			<xs:element name="mappings_blz" type="tns:mappings_blz_type" minOccurs="0" maxOccurs="unbounded"></xs:element>
+			<xs:element name="modification_kto" type="tns:modification_kto_type" minOccurs="0" maxOccurs="unbounded"></xs:element>
+			<xs:element name="mappings_bic" type="tns:mappings_bic_type" minOccurs="0" maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID"></xs:attribute>
+	</xs:complexType>
+	
+	<xs:complexType name="no_calculation_type">
+		<xs:sequence>
+			<xs:element name="kto_number_range" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="blz" type="xs:string" use="required"></xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="mappings_kto_type">
+		<xs:sequence>
+			<xs:element name="mapping" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="from" type="xs:string"></xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="blz" type="xs:string" use="required"></xs:attribute>
+		<xs:attribute name="blz_new" type="xs:string" use="optional"></xs:attribute>
+	</xs:complexType>
+
+	<xs:complexType name="mappings_ktokr_type">
+		<xs:sequence>
+			<xs:element name="mapping" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="from" type="xs:string"></xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="kto" type="xs:string" use="required"></xs:attribute>
+	</xs:complexType>
+	
+	<xs:complexType name="mappings_blz_type">
+		<xs:sequence>
+			<xs:element name="mapping" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="from" type="xs:string" use="required"></xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="modification_kto_type">
+		<xs:sequence>
+			<xs:element name="modification" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="blz" type="xs:string" use="required"></xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="mappings_bic_type">
+		<xs:sequence>
+			<xs:element name="mapping" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="blz" type="xs:string" use="required"></xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
