@@ -19,11 +19,7 @@ One quick start options are available:
 
 
 ## Using the API
-<<<<<<< HEAD
 * Documentation of the current release is available here www.iban-api.de
-=======
-* Documentation of the current release is available here iban-api.de
->>>>>>> e22517997827a9f30d4f84ea1dc3bddd109e23ec
 
 ---
 * For generating an Iban for a given bank account just 
