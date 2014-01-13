@@ -984,7 +984,7 @@
 			<mapping from="9999">92777202</mapping>
 		</mappings_kto>
 		<modification_kto>
-			<modification blz="\d{8}">\b(\d{5,6})\Z;$100</modification>
+			<modification blz="\d{8}">\b(\d{5,7})\Z;$100</modification>
 		</modification_kto>
 	</rule>
 	
@@ -1044,6 +1044,16 @@
 			<mapping from="65050281">60050101</mapping>
 			<mapping from="65350186">60050101</mapping>
 		</mappings_blz>
+	</rule>
+	
+	<!-- Rule 0026-00 Bank für Kirche und Diakonie eG, KD Bank -->
+	<rule id="_002600">
+		<!-- Rule not necessary cause acount number validation not implemented  -->
+	</rule>
+	
+	<!-- Rule 0027-00 Volksbank Krefeld eG -->
+	<rule id="_002700">
+		<!-- Rule not necessary cause acount number validation not implemented  -->
 	</rule>
 	
 	<!-- Rule 0028-00 Sparkasse Hannover -->
