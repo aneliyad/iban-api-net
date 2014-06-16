@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="org.as.iban" xmlns:tns="org.as.iban" elementFormDefault="qualified">
 
-    <xs:element name="banks" type="tns:banks_type"></xs:element>
-    
-    <xs:complexType name="banks_type">
-    	<xs:sequence>
-    		<xs:element name="bank" type="tns:bank_type" minOccurs="1" maxOccurs="unbounded"></xs:element>
-    	</xs:sequence>
-    	<xs:attribute name="schemaLocation" type="xs:string"></xs:attribute>
-    </xs:complexType>
+  <xs:element name="banks" type="tns:banks_type"></xs:element>
 
-    <xs:complexType name="bank_type">
-    	<xs:sequence>
-    		<xs:element name="bic" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
-    		<xs:element name="rule" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
-    		<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
-    	</xs:sequence>
-    	<xs:attribute name="blz" type="xs:ID" use="required"></xs:attribute>
-    </xs:complexType>
+  <xs:complexType name="banks_type">
+    <xs:sequence>
+      <xs:element name="bank" type="tns:bank_type" minOccurs="1" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="schemaLocation" type="xs:string"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="bank_type">
+    <xs:sequence>
+      <xs:element name="bic" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+      <xs:element name="rule" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+      <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+      <xs:element name="checknummer" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="blz" type="xs:ID" use="required"></xs:attribute>
+  </xs:complexType>
 </xs:schema>
